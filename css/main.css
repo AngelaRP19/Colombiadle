@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.cas-1, .cas-2, .cas-3, .cas-4, .cas-5, .cas-6, .cas-7, .cas-8, .cas-9, .cas-10{
+.cas{
     margin: 2px ;
     border: solid rgb(66, 66, 66);
     width: 40px;
@@ -40,7 +40,7 @@ body {
     align-items: center;
     display: flex;
 }
-.cas-1, .cas-2, .cas-3, .cas-4, .cas-5, .cas-6, .cas-7, .cas-8, .cas-9, .cas-10 :hover{
+.cas :hover{
   cursor: pointer;
 }
 
@@ -93,11 +93,28 @@ body {
   font-size: large;
   background-color: rgb(114, 114, 114);
 }
-/* .cas-1:focus,
-.cas-2:focus-within,
-.cas-3:focus-visible,
-.cas-4:focus,
-.cas-5:active{
-  border: solid rgb(54, 56, 83);
-  background-color: rgb(150, 161, 165);
-} */
+
+.correct{
+  background-color: rgb(37, 112, 37);
+}
+.incorrect{
+  background-color: rgb(82, 82, 82);
+}
+.wrongPlace{
+  background-color: rgb(169, 157, 27);
+}
+.animation{
+  animation: flip 1s ease;
+}
+@keyframes flip {
+  0%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+  
+}
